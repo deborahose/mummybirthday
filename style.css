@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  background: aqua;  
+}
+body{
+  overflow-x: hidden;
+  padding: 2% 0;
+}
+body h1{
+  padding: 2px 2%;
+  animation: slideDown 1s ease forwards;
+}
+
+/* H1 TEXT ANIMATION */
+@keyframes slideDown{
+  0%{
+     transform: translateY(-15px);
+     opacity: 0;
+  }
+  
+  100%{
+      transform: translateY(15px);
+      opacity: 1;
+  }
+}
+.img-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  padding: 0 2%;
+}
+.deborah-message-to-mummy{
+  width: 500px;
+}
+.deborah-message-to-mummy p{
+  text-align: left;
+}
+/* HIDDEN MESSAGE */
+#hiddenMessage{
+  display: none;
+  margin-top: 7%;
+}
+body img{
+  margin-top: 9%;
+  height: 500px;
+  /* IMAGE DECORATION*/
+  border-top: 10px solid #ff0000;
+  border-bottom: 10px solid #be7474;
+  border-left: 10px solid #50502e;
+  border-right: 10px solid #70701a;
+  animation: anime 1s linear infinite;
+}
+@keyframes anime{
+    0%{
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(360deg);
+      border-top: 10px solid #be7474;
+      border-bottom: 10px solid #ff0000;
+      border-left: 10px solid #70701a;
+      border-right: 10px solid #50502e;
+    }
+}
+
+
+.styled-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.images button{
+  margin-top: 2%;
+}
+marquee{
+  margin-top: 15%;
+  color: #000;
+  font-size: 24px;
+  text-align: left;
+  padding: 12px;
+  overflow: hidden;
+}
+audio{
+  display: none;
+}
+.hbd{
+  display: inline-block;
+  padding-right: 3%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+button{
+  padding: 10px 20px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;  
+}
+button:hover{
+  font-weight: bold;
+  background-color: #be7474;
+}
+
+
+
+/* REDMI A1+ SCREEN SIZE */
+@media screen and (max-width: 720px) {
+  body .img-container .deborah-message-to-mummy{
+    
+  }
+  .deborah-message-to-mummy p{
+    text-align: left;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body img {
+    width: 290px;
+    height: 400px;
+}
+
+.img-container {
+    flex-direction: column;
+    padding: 0 2%;
+}
+#hiddenMessage{
+  display: none;
+  margin-top: 2%;
+}
+.images button{
+  margin-top: 2%;
+}
+#openMessage{
+  margin-top: 5%;
+}
+marquee {
+    font-size: 20px;
+    padding: 10px;
+}
+}
